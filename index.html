@@ -1,21 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Title</title>
-        <link rel="stylesheet" href="css/stylesheet.css">
-    </head>
-    <body id="body">
-        <div class="clock" id="clock">
-            <div class="hands" id="hands">
-                <div class="hand hour" id="hour-hand"></div>
-                <div class="hand minute" id="minute-hand"></div>
-                <div class="hand second" id="second-hand"></div>
-                <div class="digital-clock">
-                    <label id="digital">hh:mm:ss</label>
-                </div>
-            </div>
-        </div>
-        <script src="js/main.js"></script>
-    </body>
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link rel="stylesheet"
+	      href="css/stylesheet.css">
+</head>
+<body id="body">
+<div class="clock"
+     id="clock">
+	<div class="hands"
+	     id="hands">
+		<div class="hand hour"
+		     id="hour-hand"></div>
+		<div class="hand minute"
+		     id="minute-hand"></div>
+		<div class="hand second"
+		     id="second-hand"></div>
+	</div>
+</div>
+<div class="digital-clock">
+	<div id="digital">
+		<label id="hour">hh</label>
+		<input type="text" id="hour_edit" class="hidden"/>
+		:
+		<label id="minute">mm</label>
+		<input type="text" id="minute_edit" class="hidden"/>
+		:
+		<label id="second">ss</label>
+		<input type="text" id="second_edit" class="hidden"/>
+	</div>
+</div>
+<script src="js/main.js"></script>
+</body>
 </html>
